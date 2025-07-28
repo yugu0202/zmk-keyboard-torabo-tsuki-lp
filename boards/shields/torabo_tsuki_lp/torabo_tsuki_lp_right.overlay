@@ -2,20 +2,16 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
-default_mouse_processor: default_mouse_processor {
-    compatible = "zmk,input-processor-pointing-transform";
-    transform-flags = <(INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
-};
-
-scroll_mode_processor: scroll_mode_processor {
-    compatible = "zmk,input-processor-pointing-scroll";
-    layers = <3>;
-    transform-flags = <(INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
-    // scale = <150>; // スクロール速度を調整したい場合はコメントを外して数値を変更
-};
-
 &trackball_listener {
-    input-processors = <&scroll_mode_processor, &default_mouse_processor>;
+    input-processors =
+        <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+
+    scroller {
+        layers = <3>;
+        input-processors =
+            <&zip_xy_to_scroll_mapper>,
+            <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+    };
 };
 
 &size_s_transform {
