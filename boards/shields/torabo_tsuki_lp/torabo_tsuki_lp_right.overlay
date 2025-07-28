@@ -2,14 +2,14 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
-scroll_processor {
+scroll_processor: scroll_processor {
     layer = 3;
     input-processors =
     <&zip_xy_to_scroll_mapper>,
     <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
 };
 
-default_mouse_processor {
+default_mouse_processor: default_mouse_processor {
     input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
 };
 
