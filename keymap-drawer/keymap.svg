@@ -557,13 +557,13 @@ path.combo {
 <g transform="translate(520, 280)" class="key keypos-44">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em" style="font-size: 62%">LANGUAGE</tspan><tspan x="0" dy="1.0em" style="font-size: 62%">1</tspan>
+<tspan x="0" dy="-0.5em" style="font-size: 62%">LANGUAGE</tspan><tspan x="0" dy="1.0em" style="font-size: 62%">2</tspan>
 </text>
 </g>
 <g transform="translate(680, 280)" class="key keypos-45">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em" style="font-size: 62%">LANGUAGE</tspan><tspan x="0" dy="1.0em" style="font-size: 62%">2</tspan>
+<tspan x="0" dy="-0.5em" style="font-size: 62%">LANGUAGE</tspan><tspan x="0" dy="1.0em" style="font-size: 62%">1</tspan>
 </text>
 </g>
 <g transform="translate(760, 280)" class="key keypos-46">
