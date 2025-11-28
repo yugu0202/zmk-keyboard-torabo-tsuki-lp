@@ -9,8 +9,20 @@
         compatible = "zmk,combos";
 
         sticky_shift {
-            bindings = <&sk LSHIFT>;
+            bindings = <&skq LSHIFT>;
             key-positions = <28 27>;
+        };
+    };
+
+    behaviors {
+        skq: skq {
+            compatible = "zmk,behavior-sticky-key";
+            label = "Sticky Key Quick Release";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <1000>;
+            quick-release;
+            ignore-modifiers;
         };
     };
 
