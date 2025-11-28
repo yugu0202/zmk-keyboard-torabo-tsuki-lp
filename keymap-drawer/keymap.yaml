@@ -61,7 +61,7 @@ layers:
   - $$mdi:keyboard-space$$
   - '3'
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:keyboard-return$$', h: '2'}
+  - {t: KP ENTER, h: '2'}
   - ''
   - ''
   - $$mdi:apple-keyboard-option$$
